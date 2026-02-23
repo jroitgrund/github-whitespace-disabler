@@ -1,24 +1,32 @@
 {
   "manifest_version": 2,
-  "name": "Github Whitespace Disabler",
-  "version": "1.0.1",
+  "name": "Auto-Hide GitHub Whitespace",
+  "version": "1.0.0",
   "description": "Force Github to open diff pages without whitespace changes displayed",
   "icons": {
     "48": "icons/github-48.png",
     "64": "icons/github-64.png"
   },
   "background": {
-    "scripts": ["interceptor.js"]
+    "scripts": [
+      "interceptor.js"
+    ]
   },
   "permissions": [
     "webRequest",
     "webRequestBlocking",
-    "*://github.com/*/*/pull/*/files"
+    "*://github.com/*/*/pull/*/files",
+    "*://github.com/*/*/pull/*/changes"
   ],
-  "applications": {
+  "browser_specific_settings": {
     "gecko": {
-      "id": "maksimovic@outlook.com"
+      "id": "{f902c0ea-b630-46d7-98e9-11d55542ab63}",
+      "data_collection_permissions": {
+        "required": [
+          "none"
+        ]
+      }
     }
   },
-  "author": "Oliver Maksimovic"
+  "author": "Jonathan Roitgrund"
 }

@@ -1,0 +1,11 @@
+{
+  "name": "auto-hide-github-whitespace",
+  "scripts": {
+    "dev": "web-ext run",
+    "build": "web-ext build --overwrite-dest",
+    "lint": "web-ext lint"
+  },
+  "devDependencies": {
+    "web-ext": "^8"
+  }
+}

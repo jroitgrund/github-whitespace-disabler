@@ -1,13 +1,20 @@
-# No longer maintained
+# Auto-Hide GitHub Whitespace
 
-Github allows ignoring whitespace changes via UI:
+Firefox extension that forces GitHub to open PR diff pages with `?w=1` appended, hiding whitespace-only changes.
 
-![Hide Whitespace](https://i.imgur.com/fEWQDLe.png)
+Works on both `/pull/*/files` and `/pull/*/changes` routes.
 
-# Github Whitespace Disabler
+Install from [addons.mozilla.org](https://addons.mozilla.org/en-US/firefox/addon/auto-hide-github-whitespace/).
 
-Firefox extension which forces Github to open diff pages with `w=1` appended, so it always displays the changes without whitespace differences.
+## Development
 
-The extension can be obtained at: https://addons.mozilla.org/en-US/firefox/addon/github-whitespace-disabler/
+```sh
+npm install
+npm run dev    # launch Firefox with extension loaded (auto-reloads on save)
+npm run build  # produce a .zip in web-ext-artifacts/ for AMO upload
+npm run lint   # validate manifest and extension
+```
 
-Inspired by Chrome extension which can be found here: [kemo/github-whitespace-disabler](https://github.com/kemo/github-whitespace-disabler)
+## Attribution
+
+Forked from [olivermaksimovic/github-whitespace-disabler](https://github.com/olivermaksimovic/github-whitespace-disabler), itself inspired by the Chrome extension [kemo/github-whitespace-disabler](https://github.com/kemo/github-whitespace-disabler).

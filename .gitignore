@@ -1,1 +1,5 @@
+.DS_Store
 .idea
+plans/*.md
+node_modules/
+web-ext-artifacts/
