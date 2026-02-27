@@ -1,12 +1,19 @@
 {
   "manifest_version": 2,
   "name": "Auto-Hide GitHub Whitespace",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "description": "Force Github to open diff pages without whitespace changes displayed",
   "icons": {
     "48": "icons/github-48.png",
     "64": "icons/github-64.png"
   },
+  "content_scripts": [
+    {
+      "matches": ["*://github.com/*"],
+      "js": ["content-script.js"],
+      "run_at": "document_end"
+    }
+  ],
   "background": {
     "scripts": [
       "interceptor.js"
