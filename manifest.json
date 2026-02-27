@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Auto-Hide GitHub Whitespace",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "description": "Force Github to open diff pages without whitespace changes displayed",
   "icons": {
     "48": "icons/github-48.png",
