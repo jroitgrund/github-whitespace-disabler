@@ -7,14 +7,7 @@
     "48": "icons/github-48.png",
     "64": "icons/github-64.png"
   },
-  "content_scripts": [
-    {
-      "matches": ["*://github.com/*"],
-      "js": ["content-script.js"],
-      "run_at": "document_end"
-    }
-  ],
-  "background": {
+"background": {
     "scripts": [
       "interceptor.js"
     ]
@@ -22,6 +15,8 @@
   "permissions": [
     "webRequest",
     "webRequestBlocking",
+    "webNavigation",
+    "tabs",
     "*://github.com/*/*/pull/*/files",
     "*://github.com/*/*/pull/*/changes"
   ],
