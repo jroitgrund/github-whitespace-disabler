@@ -3,9 +3,11 @@
   "scripts": {
     "dev": "web-ext run",
     "build": "web-ext build --overwrite-dest",
-    "lint": "web-ext lint"
+    "lint": "web-ext lint",
+    "release": "dotenv -- web-ext sign --channel=listed"
   },
   "devDependencies": {
+    "dotenv-cli": "^7",
     "web-ext": "^8"
   }
 }

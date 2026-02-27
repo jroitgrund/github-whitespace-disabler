@@ -1,3 +1,5 @@
+.env
+.amo-upload-uuid
 .DS_Store
 .idea
 plans/*.md
